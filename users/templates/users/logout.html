@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <!-- Main Content -->
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({% static 'img/Users-bg.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Clean Blog</h1>
+            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h2>You have been logged out</h2>
+    
+    <div class="border-top pt-3">
+      <small class="text-muted">Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Log In Again</a>
+      </small>
+    </div>
+  </div>
+
+{% endblock %}
